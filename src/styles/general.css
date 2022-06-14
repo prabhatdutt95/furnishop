@@ -59,7 +59,6 @@ a {
 }
 
 .wrapper {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,4 +77,15 @@ a {
 .screen > img {
   width: 45vw;
   height: auto;
+}
+
+#features img {
+  width: 20vw;
+  height: 50vh;
+}
+
+figcaption {
+  position: relative;
+  top: -50px;
+  color: white;
 }

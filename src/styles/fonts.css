@@ -1,0 +1,41 @@
+@import "./variables.css";
+
+.font-size-sm {
+  font-size: var(--font-size-sm) !important;
+}
+
+.font-size-lg {
+  font-size: var(--font-size-lg) !important;
+}
+
+.font-size-base {
+  font-size: var(--font-size-base) !important;
+}
+
+.icon-sm {
+  font-size: var(--icon-font-size-sm) !important;
+}
+
+.icon-default {
+  font-size: var(--icon-font-size-base) !important;
+}
+
+.icon-lg {
+  font-size: var(--icon-font-size-lg) !important;
+}
+
+.icon-xl {
+  font-size: var(--icon-font-size-xl) !important;
+}
+
+.icon-xxl {
+  font-size: var(--icon-font-size-xxl) !important;
+}
+
+.title-head {
+  font-size: 40px;
+}
+
+.font-italic {
+  font-style: italic;
+}

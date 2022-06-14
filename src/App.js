@@ -1,5 +1,6 @@
 import "./styles/general.css";
 import "./styles/navbar.css";
+import { AiFillCheckCircle } from "react-icons/ai";
 
 import React, { useEffect, useState } from "react";
 
@@ -27,22 +28,54 @@ function App() {
         <nav id="nav-bar">
           <ul>
             <li>
-              <a className="nav-link" href="#home">
+              <a
+                className="nav-link"
+                href="#home"
+                onClick={(e) => {
+                  let hero = document.getElementById("home");
+                  e.preventDefault();
+                  hero && hero.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#about">
+              <a
+                className="nav-link"
+                href="#about"
+                onClick={(e) => {
+                  let hero = document.getElementById("about");
+                  e.preventDefault();
+                  hero && hero.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 About
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#features">
+              <a
+                className="nav-link"
+                href="#features"
+                onClick={(e) => {
+                  let hero = document.getElementById("features");
+                  e.preventDefault();
+                  hero && hero.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 Features
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#contact">
+              <a
+                className="nav-link"
+                href="#contact"
+                onClick={(e) => {
+                  let hero = document.getElementById("contact");
+                  e.preventDefault();
+                  hero && hero.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 Contact
               </a>
             </li>
@@ -64,7 +97,7 @@ function App() {
       {/* Home section ends */}
 
       {/* About section start */}
-      <section className="wrapper">
+      <section id="about" className="wrapper">
         <div className="screen">
           <img
             src={require("./assets/images/about.jpg")}
@@ -89,7 +122,10 @@ function App() {
             <h4>
               <strong>Valuation Services</strong>
             </h4>
-            <span>
+            <span style={{ display: "flex", alignItems: "center" }}>
+              <AiFillCheckCircle
+                style={{ height: "15px", marginRight: "5px" }}
+              />
               Sometimes features require a short description. This can be
               detailed description
             </span>
@@ -98,7 +134,110 @@ function App() {
             <h4>
               <strong>Development of Furniture Models</strong>
             </h4>
-            <span>
+            <span style={{ display: "flex", alignItems: "center" }}>
+              <AiFillCheckCircle
+                style={{ height: "15px", marginRight: "5px" }}
+              />
+              Sometimes features require a short description. This can be
+              detailed description
+            </span>
+          </div>
+        </div>
+      </section>
+      {/* About section ends */}
+
+      {/* About section start */}
+      <section id="features" className="wrapper">
+        <div className="screen">
+          <img
+            src={require("./assets/images/about.jpg")}
+            alt="Grey Sofa with a brown coffee table"
+          />
+        </div>
+        <div className="screen" style={{ maxWidth: "50%", padding: "25px" }}>
+          <h2
+            style={{
+              fontSize: "35px",
+              lineHeight: "40px",
+            }}
+            className="mb-20"
+          >
+            We Create your home more aestetic
+          </h2>
+          <p className="mb-20">
+            Furnitre power is a software as services for multiperpose business
+            management system,
+          </p>
+          <div className="mb-20">
+            <h4>
+              <strong>Valuation Services</strong>
+            </h4>
+            <span style={{ display: "flex", alignItems: "center" }}>
+              <AiFillCheckCircle
+                style={{ height: "15px", marginRight: "5px" }}
+              />
+              Sometimes features require a short description. This can be
+              detailed description
+            </span>
+          </div>
+          <div>
+            <h4>
+              <strong>Development of Furniture Models</strong>
+            </h4>
+            <span style={{ display: "flex", alignItems: "center" }}>
+              <AiFillCheckCircle
+                style={{ height: "15px", marginRight: "5px" }}
+              />
+              Sometimes features require a short description. This can be
+              detailed description
+            </span>
+          </div>
+        </div>
+      </section>
+      {/* About section ends */}
+
+      {/* About section start */}
+      <section id="contact" className="wrapper">
+        <div className="screen">
+          <img
+            src={require("./assets/images/about.jpg")}
+            alt="Grey Sofa with a brown coffee table"
+          />
+        </div>
+        <div className="screen" style={{ maxWidth: "50%", padding: "25px" }}>
+          <h2
+            style={{
+              fontSize: "35px",
+              lineHeight: "40px",
+            }}
+            className="mb-20"
+          >
+            We Create your home more aestetic
+          </h2>
+          <p className="mb-20">
+            Furnitre power is a software as services for multiperpose business
+            management system,
+          </p>
+          <div className="mb-20">
+            <h4>
+              <strong>Valuation Services</strong>
+            </h4>
+            <span style={{ display: "flex", alignItems: "center" }}>
+              <AiFillCheckCircle
+                style={{ height: "15px", marginRight: "5px" }}
+              />
+              Sometimes features require a short description. This can be
+              detailed description
+            </span>
+          </div>
+          <div>
+            <h4>
+              <strong>Development of Furniture Models</strong>
+            </h4>
+            <span style={{ display: "flex", alignItems: "center" }}>
+              <AiFillCheckCircle
+                style={{ height: "15px", marginRight: "5px" }}
+              />
               Sometimes features require a short description. This can be
               detailed description
             </span>
